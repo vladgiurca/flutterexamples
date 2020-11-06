@@ -15,7 +15,16 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          child: Text('This is my first dummy data'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Testing'),
+              RaisedButton(
+                  onPressed: () {},
+                  child: Text('Press Me'),
+                  color: Colors.amber),
+            ],
+          ),
         ),
       ),
     );
